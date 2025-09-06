@@ -1,9 +1,12 @@
 import { Link } from "react-router";
 import { ShipWheelIcon, UsersIcon, MessageCircleIcon, GlobeIcon, StarIcon, ArrowRightIcon } from "lucide-react";
 import { useStatistics } from "../hooks/useStatistics";
+import { useThemeStore } from "../store/useThemeStore";
+import ThemeSelector from "../components/ThemeSelector";
 
 const LandingPage = () => {
   const { data: statistics, isLoading, error } = useStatistics();
+  const { theme } = useThemeStore();
 
   // Format numbers for display
   const formatNumber = (num) => {
@@ -20,7 +23,7 @@ const LandingPage = () => {
   };
 
   return (
-    <div className="min-h-screen" data-theme="forest">
+    <div className="min-h-screen" data-theme={theme}>
       {/* Navigation */}
       <nav className="backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -48,6 +51,7 @@ const LandingPage = () => {
 
             {/* CTA Buttons */}
             <div className="flex items-center gap-3">
+              <ThemeSelector />
               <Link to="/login" className="btn btn-ghost">
                 Sign In
               </Link>
