@@ -1,0 +1,16 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="16" height="16" fill="#1a1a1a"/>
+  
+  <!-- Ship wheel design -->
+  <circle cx="8" cy="8" r="6" stroke="#4a9eff" stroke-width="1" fill="none"/>
+  <circle cx="8" cy="8" r="4" stroke="#4a9eff" stroke-width="0.8" fill="none"/>
+  <circle cx="8" cy="8" r="2" stroke="#4a9eff" stroke-width="0.6" fill="none"/>
+  
+  <!-- Wheel spokes -->
+  <line x1="8" y1="2" x2="8" y2="14" stroke="#4a9eff" stroke-width="0.8"/>
+  <line x1="2" y1="8" x2="14" y2="8" stroke="#4a9eff" stroke-width="0.8"/>
+  
+  <!-- Center dot -->
+  <circle cx="8" cy="8" r="1" fill="#4a9eff"/>
+</svg>

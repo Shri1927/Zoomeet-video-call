@@ -1,0 +1,33 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle with gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2a2a2a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="wheelGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a9eff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d5aa0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <circle cx="32" cy="32" r="32" fill="url(#bgGradient)"/>
+  
+  <!-- Ship wheel design -->
+  <circle cx="32" cy="32" r="24" stroke="url(#wheelGradient)" stroke-width="3" fill="none"/>
+  <circle cx="32" cy="32" r="16" stroke="url(#wheelGradient)" stroke-width="2" fill="none"/>
+  <circle cx="32" cy="32" r="8" stroke="url(#wheelGradient)" stroke-width="1.5" fill="none"/>
+  
+  <!-- Wheel spokes -->
+  <line x1="32" y1="8" x2="32" y2="56" stroke="url(#wheelGradient)" stroke-width="2"/>
+  <line x1="8" y1="32" x2="56" y2="32" stroke="url(#wheelGradient)" stroke-width="2"/>
+  <line x1="16.68" y1="16.68" x2="47.32" y2="47.32" stroke="url(#wheelGradient)" stroke-width="1.5"/>
+  <line x1="47.32" y1="16.68" x2="16.68" y2="47.32" stroke="url(#wheelGradient)" stroke-width="1.5"/>
+  
+  <!-- Center dot -->
+  <circle cx="32" cy="32" r="4" fill="url(#wheelGradient)"/>
+  
+  <!-- Small "F" for FluentFriends -->
+  <text x="32" y="38" font-family="monospace" font-size="8" font-weight="bold" text-anchor="middle" fill="url(#wheelGradient)">F</text>
+</svg>
