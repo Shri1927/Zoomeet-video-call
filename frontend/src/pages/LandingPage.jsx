@@ -102,7 +102,7 @@ const LandingPage = () => {
                     ) : error ? (
                       "0"
                     ) : (
-                      formatNumber(statistics?.activeUsers)
+                      formatNumber(statistics?.activeUsers+50)+"+"
                     )}
                   </div>
                   <div className="text-sm text-base-content/70">Active Users</div>
@@ -114,7 +114,7 @@ const LandingPage = () => {
                     ) : error ? (
                       "0"
                     ) : (
-                      formatNumber(statistics?.uniqueLanguages)
+                      formatNumber(statistics?.uniqueLanguages)+"+"
                     )}
                   </div>
                   <div className="text-sm text-base-content/70">Languages</div>
@@ -126,7 +126,7 @@ const LandingPage = () => {
                     ) : error ? (
                       "0"
                     ) : (
-                      formatNumber(statistics?.totalMessages)
+                      formatNumber(statistics?.totalMessages)+"+"
                     )}
                   </div>
                   <div className="text-sm text-base-content/70">Messages</div>
